@@ -12,7 +12,7 @@ st.set_page_config(page_title="Diabetes Health Analysis", layout="wide")
 st.title("🩺 Diabetes Health Indicators Analysis")
 
 # GitHub dataset URL
-github_url = "github_url = "https://raw.githubusercontent.com/Kamel-27/FinalDC/main/diabetes_binary_5050split_health_indicators_BRFSS2015.csv"
+github_url ="https://raw.githubusercontent.com/Kamel-27/FinalDC/main/diabetes_binary_5050split_health_indicators_BRFSS2015.csv"
 
 # Load models
 try:

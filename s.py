@@ -103,15 +103,6 @@ def model_evaluation(data):
     st.text("Classification Report:\n" + classification_report(Y_test, Y_pred))
     st.text("Confusion Matrix:\n" + str(confusion_matrix(Y_test, Y_pred)))
 
-    st.subheader("🧬 LDA Projection of Test Data")
-    fig, ax = plt.subplots()
-    scatter = ax.scatter(X_test_lda[:, 0], X_test_lda[:, 1], c=Y_test, cmap='coolwarm', alpha=0.6)
-    legend = ax.legend(*scatter.legend_elements(), title="Diabetes")
-    ax.add_artist(legend)
-    ax.set_xlabel("LDA Component 1")
-    ax.set_ylabel("LDA Component 2")
-    st.pyplot(fig)
-
 
 # 🧪 Predict single input
 def input_prediction():

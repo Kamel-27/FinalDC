@@ -30,7 +30,7 @@ top_features = ['HighBP', 'HighChol', 'BMI', 'HeartDiseaseorAttack', 'GenHlth',
 # Main function
 def main():
     try:
-        df = pd.read_csv(github_url)
+        df = pd.read_csv(diabetes_binary_5050split_health_indicators_BRFSS2015.csv)
         data = df.copy()
 
         # Convert types
